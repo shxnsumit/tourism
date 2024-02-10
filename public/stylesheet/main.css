@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(125, 110, 110, 0.499);
+    width: 100%     ;
+    height: 10%;
+    position: sticky;
+    z-index: 99;
+    /* min-width: 100%; */
+}
+
+@media (max-width: 800px) {
+     nav{
+        width: 100%;
+        font-size: 20px;
+        height: 10%;
+     }
+}
+@media(max-width: 650px) {
+    nav{
+       width: 100vh;
+       font-size: 17px;
+       height: 10%;
+    }
+}
+
+/* @media(max-width: 430px) {
+    nav{
+       width: 100vh;
+       font-size: 23px;
+       height: 10%;
+    }
+} */
+
+/* @media(max-width: 400px){
+    nav{
+       width: 100vh;
+       font-size: 23px;
+       height: 10%;
+    }
+} */
+
+@media(max-width: 399px){
+    nav{
+       width: 110vh;
+       font-size: 23px;
+       height: 20%;
+    }
+}
+nav .logo{
+    height: 100%;
+    width: 100px;
+    mix-blend-mode: color-burn;
+}
+nav .logo > img{
+    height: 100%;
+    width: 80%;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    width: cal(100% - 100px);
+    /* background-color: red; */
+}
+
+nav ul > li{
+    padding: 10px 30px;
+}
+
+
+.input-box {
+  position: relative;
+  width: 100%;
+max-width: 140px;
+  height: 40px;
+  margin: 0 50px;
+  background-color: #fff;
+  border-radius: 6px;
+  transition: all 0.5s ease-in-out;
+}
+.input-box.open {
+  max-width: 50%;
+}
+.input-box input {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  padding: 0 15px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  transition: all 0.5s ease-in-out;
+}
+.input-box.open input {
+  padding: 0 15px 0 65px;
+}
+
+.input-box .search {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.input-box.open .search {
+  border-radius: 6px 0 0 6px;
+}
+.search .search-icon {
+  font-size: 30px;
+  color: #1c1c1c;
+}
+.input-box .close-icon {
+  position: absolute;
+  top: 50%;
+  right: -45px;
+  font-size: 30px;
+  color: #1c1c1c;
+  padding: 5px;
+  transform: translateY(-50%);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  pointer-events: none;
+  opacity: 0;
+}
+.input-box.open .close-icon {
+  transform: translateY(-50%) rotate(180deg);
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.main{
+    height: calc(100% - 74px);
+    /* background-color: red; */
+    background-image: url(https://images.unsplash.com/photo-1581793746485-04698e79a4e8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: 0px -350px;
+    background-repeat: no-repeat;
+}
