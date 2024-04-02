@@ -13,7 +13,6 @@ db.once("open", () => {
     console.log('connected to mongodb database');
 });
 
-
 const userSchema = new mongoose.Schema({
     name: String,
     email: String,
@@ -84,5 +83,5 @@ app.get('/main', (req, res) => {
 
 app.listen(port, () => {
     console.log(`the port is running at ${port}`)
-});
+});``
 

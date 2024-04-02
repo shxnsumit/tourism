@@ -6,8 +6,8 @@
 }
 
 html,body{
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 nav{
@@ -20,6 +20,8 @@ nav{
     position: sticky;
     z-index: 99;
     /* min-width: 100%; */
+    padding: 0 30px;
+    top: 0;
 }
 
 @media (max-width: 800px) {
@@ -37,21 +39,6 @@ nav{
     }
 }
 
-/* @media(max-width: 430px) {
-    nav{
-       width: 100vh;
-       font-size: 23px;
-       height: 10%;
-    }
-} */
-
-/* @media(max-width: 400px){
-    nav{
-       width: 100vh;
-       font-size: 23px;
-       height: 10%;
-    }
-} */
 
 @media(max-width: 399px){
     nav{
@@ -70,24 +57,53 @@ nav .logo > img{
     width: 80%;
 }
 
-nav ul{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    list-style: none;
-    width: cal(100% - 100px);
-    /* background-color: red; */
-}
-
-nav ul > li{
+  nav ul{
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      list-style: none;
+      width: cal(100% - 100px);
+      /* background-color: red; */
+      position: relative;
+  }
+  nav ul > li{
     padding: 10px 30px;
-}
+  }
+  .profile{
+    position: absolute;
+    left: 86.7%;
+    background-color: rgba(46, 47, 46, 0.837);
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    padding: 40px 10px;
+    display: none;
+  }
 
+  .profile > .options {
+    /* text-align: center; */
+    color: white;
 
+  }
+
+  .profile > .options > ul{
+    list-style: none;
+    display: flex;
+    /* align-items: center; */
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 10px;
+  }
+
+  .profile > .options > ul > li > a{
+    color: #fff;
+    text-decoration: none;
+  }
 .input-box {
   position: relative;
   width: 100%;
-max-width: 140px;
+  max-width: 140px;
   height: 40px;
   margin: 0 50px;
   background-color: #fff;
@@ -152,12 +168,10 @@ max-width: 140px;
   pointer-events: auto;
   opacity: 1;
 }
-
+/* 
 .main{
     height: calc(100% - 74px);
-    /* background-color: red; */
-    background-image: url(https://images.unsplash.com/photo-1581793746485-04698e79a4e8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    background-size: cover;
-    background-position: 0px -350px;
-    background-repeat: no-repeat;
-}
+    width: 100vw;    
+    position: relative;
+  } */
+
